@@ -1,5 +1,5 @@
 var tanggal=10; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var bulan=22; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
+var bulan=2; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun=12; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 switch(bulan) {
     case 1:
