@@ -1,11 +1,15 @@
-var tanggal=1; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var bulan=7; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-var tahun=2019; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
+var tanggal=-3; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
+var bulan=12; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
+var tahun=2400; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
   if (tanggal<1 || tanggal>31){
-    console.log('tanggal yang anda masukan salah')
-  }else {
-    switch(bulan) {
+    console.log('Tanggal yang anda masukan salah')
+  }else if (bulan <1 || bulan > 12){
+        console.log('Bulan yang anda masukan salah')
+      }else if (tahun<1900 ||tahun>2200){
+          console.log('Tahun yang anda masukan Harus 1900 - 2200')
+        } else {
+      switch(bulan) {
         case 1:
             bulan=' Januari ';
             break;
@@ -41,6 +45,6 @@ var tahun=2019; // assign nilai variabel tahun disini! (dengan angka antara 1900
             break;
         default:
             bulan=' Desember '
-      }
       console.log(tanggal + bulan + tahun);
+    }
   }
