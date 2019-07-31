@@ -14,16 +14,15 @@ DISPLAY 'F'
 
 STORE "year" with any number
 
-IF "year" modulo 4 equal to 0 THEN
-     IF "year" modulo 100 not equal to 0 
-      ELSE IF "year" modulo 4 equal to 0, THEN
-        IF "year" moddulo 100 equal to 0 THEN
+IF "year" modulo 4 equal to 0 AND
+     IF "year" modulo 100 not equal to 0
+     DISPLAY "Tahun Kabisat" 
+      ELSE IF "year" modulo 4 equal to 0,
+        IF "year" modulo 100 equal to 0 AND
           IF "year" modulo 400 equal to 0
-ENDIF
-
-DISPLAY "tahun kabisat"
-    ELSE
-        DISPLAY "bukan tahun kabisat"
+      DISPLAY "tahun kabisat"
+ELSE
+  DISPLAY "bukan tahun kabisat"
 ======================================
 3. Laundry Day
 
@@ -37,18 +36,13 @@ DISPLAY "Msulai Mencuci"
 ======================================
 4. Periksa Kuku
 
-STORE "count" to 0
+STORE "Total Siswa" by 40
+STORE "Siswa" by 1
+STORE "Kuku Panjang" by TRUE or FALSE
 
-WHILE "count" < 40
-  ADD "count" by 1
-ENDWHILE
-
-DISPLAY "count"
-
-STORE "kuku panjang" with "count mod 2 equal to 0"
-STORE "kuku pendek" with "count mod 2 not equal to 0"
-
-IF "count" mod 2 equal to 0
-  DISPLAY "mendapat hukuman"
-ELSE
-  DISPLAY "mendapat pujian"
+WHILE "Siswa" <= "Total Siswa Kelas"
+    DISPLAY "Siswa ke-" + "Siswa"  
+IF " Kuku Panjang" = "TRUE"
+    DISPLAY "Kamu mendapat hukuman!"
+ELSE DISPLAY "Kamu anak Baik!"
+    ADD "Siswa" by 1.
