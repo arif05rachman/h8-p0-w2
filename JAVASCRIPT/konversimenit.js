@@ -1,10 +1,10 @@
 function konversiMenit(menit) {
-    var m = Math.floor(menit/60)
-    var s = menit%60
-    if(String(s).length===1){
-        s='0'+s
+    var minutes = Math.floor(menit/60)
+    var second = menit%60
+    if(String(second).length===1){
+        second='0'+second
     }
-    var konversi=m+':'+s;
+    var konversi=minutes+':'+second;
     return String(konversi)
   }
   
