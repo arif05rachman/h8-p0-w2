@@ -14,22 +14,20 @@ DISPLAY 'F'
 
 STORE "year" with any number
 
-IF "year" modulo 4 equal to 0 AND
-     IF "year" modulo 100 not equal to 0
-     DISPLAY "Tahun Kabisat" 
-      ELSE IF "year" modulo 4 equal to 0,
-        IF "year" modulo 100 equal to 0 AND
-          IF "year" modulo 400 equal to 0
-      DISPLAY "tahun kabisat"
+IF "year" modulo 4 equal to 0 AND "year" modulo 100 not equal to 0
+  DISPLAY "Tahun Kabisat" 
+ELSE IF "year" modulo 4 equal to 0 AND "year" modulo 100 equal to 0 AND "year" modulo 400 equal to 0
+  DISPLAY "Tahun Kabisat"
 ELSE
-  DISPLAY "bukan tahun kabisat"
+  DISPLAY "Bukan Tahun Kabisat"
+ENDIF
 ======================================
 3. Laundry Day
 
 STORE "pakaian" with 0
 
 WHILE "paaian" < 20
-    ADD "pakaian" by 1
+  ADD "pakaian" by 1
 ENDWHILE
 
 DISPLAY "Msulai Mencuci"
@@ -41,8 +39,9 @@ STORE "Siswa" by 1
 STORE "Kuku Panjang" by TRUE or FALSE
 
 WHILE "Siswa" <= "Total Siswa Kelas"
-    DISPLAY "Siswa ke-" + "Siswa"  
+  DISPLAY "Siswa ke-" + "Siswa"  
 IF " Kuku Panjang" = "TRUE"
-    DISPLAY "Kamu mendapat hukuman!"
-ELSE DISPLAY "Kamu anak Baik!"
+  DISPLAY "Kamu mendapat hukuman!"
+ELSE 
+  DISPLAY "Kamu anak Baik!"
     ADD "Siswa" by 1.
