@@ -15,9 +15,9 @@ DISPLAY 'F'
 
 STORE "year" with any number
 
-IF "year" modulo 4 equal to 0 AND "year" modulo 100 not equal to 0
+IF "year" modulo 4 EQUAL to 0 AND "year" modulo 100 NOT EQUAL to 0
   DISPLAY "Tahun Kabisat" 
-ELSE IF "year" modulo 4 equal to 0 AND "year" modulo 100 equal to 0 AND "year" modulo 400 equal to 0
+ELSE IF "year" modulo 4 EQUAL to 0 AND "year" modulo 100 EQUAL to 0 AND "year" modulo 400 EQUAL to 0
   DISPLAY "Tahun Kabisat"
 ELSE
   DISPLAY "Bukan Tahun Kabisat"
@@ -27,11 +27,11 @@ ENDIF
 
 STORE "pakaian" with 0
 
-WHILE "pakaian" < 20
+WHILE "pakaian" LESS THAN 20
   ADD "pakaian" by 1
 ENDWHILE
 
-DISPLAY "Msulai Mencuci"
+DISPLAY "Mulai Mencuci"
 ======================================
 4. Periksa Kuku
 
@@ -39,8 +39,8 @@ STORE "totalSiswa" by 40
 STORE "siswa" by 1
 STORE "kukuPanjang" by TRUE or FALSE
 
-WHILE "siswa" less than or equal "totalSiswa"
-  DISPLAY "Siswa ke-" plus "siswa"  
+WHILE "siswa" LESS THAN OR EQUAL "totalSiswa"
+  DISPLAY "Siswa ke-" PLUS "siswa"  
 IF "kukuPanjang"  "TRUE"
   DISPLAY "Kamu mendapat hukuman!"
 ELSE 
