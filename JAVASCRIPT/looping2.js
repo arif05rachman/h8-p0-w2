@@ -5,24 +5,18 @@ for(var i=1; i<=rows1;i++){
 }
 
 //2. Menyusun Barisan Bintang Dengan Nested Looping
-var rows2=5; // input the number of rows
-var bintang=''
-for (i = 1; i <= rows2; i++){
-    for (j = 1; j <= rows2; j++){
-    bintang+='*'
+
+var rows2 = 5;
+
+for(var i = 1; i <= rows2; i++) {
+    var bintang2 = '';
+    for(var j = 1; j <= rows2; j++) {
+        bintang2 += '*';        
     }
-    console.log(bintang);
-    bintang='';
+    console.log(bintang2);
 }
+
 //3. Menyusun Barisan Tangga Bintang Dengan Nested Looping
-/*var rows3=5; // input the number of rows
-var bintang2='*'
-for (k = 1; k <= rows3; k++){
-    for (k = 1; k <= rows3; k++){
-        console.log(bintang2);
-        bintang2+='*'
-    }
-}*/
 var rows3 = 5;
 
 for(var k = 1; k <= rows3; k++) {
