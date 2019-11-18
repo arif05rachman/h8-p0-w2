@@ -1,0 +1,44 @@
+1. Newton Second Law
+
+STORE 'F' with any number
+STORE 'm' with value 600
+SRORE 'a' with value 2
+CALCULATE 'm' times 'a'
+SET 'F' value with CALCULATION RESULT
+DISPLAY 'F'
+
+======================================
+2. Tahun Kabisat
+
+STORE "year" with any number
+IF "year" modulo 4 EQUAL to 0 AND "year" modulo 100 NOT EQUAL to 0
+  DISPLAY "Tahun Kabisat" 
+ELSE IF "year" modulo 4 EQUAL to 0 AND "year" modulo 100 EQUAL to 0 AND "year" modulo 400 EQUAL to 0
+  DISPLAY "Tahun Kabisat"
+ELSE
+  DISPLAY "Bukan Tahun Kabisat"
+ENDIF
+
+======================================
+3. Laundry Day
+
+STORE "pakaian" with 0
+WHILE "pakaian" LESS THAN 20
+  ADD "pakaian" by 1
+ENDWHILE
+DISPLAY "Mulai Mencuci"
+
+======================================
+4. Periksa Kuku
+
+STORE "totalSiswa" by 40
+STORE "siswa" by 1
+STORE "kukuPanjang" by TRUE or FALSE
+
+WHILE "siswa" LESS THAN OR EQUAL "totalSiswa"
+  DISPLAY "Siswa ke-" PLUS "siswa"  
+IF "kukuPanjang"  "TRUE"
+  DISPLAY "Kamu mendapat hukuman!"
+ELSE 
+  DISPLAY "Kamu anak Baik!"
+  ADD "siswa" by 1.
